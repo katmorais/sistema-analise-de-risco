@@ -1,10 +1,10 @@
 ## Sistema de Análise de Risco Fuzzy
 
-Bem-vindo ao repositório! Este projeto é um Sistema de Análise de Risco Fuzzy, uma aplicação que utiliza lógica fuzzy para avaliar o risco de crédito de clientes com base em três variáveis principais: histórico de crédito, renda mensal e dívida atual. O sistema auxilia instituições financeiras na avaliação da solvência e do risco de crédito dos clientes.
+Bem-vindo ao repositório do Sistema de Análise de Risco Fuzzy! Este projeto é uma aplicação que emprega lógica fuzzy para avaliar o risco de crédito de clientes, considerando três variáveis principais: Histórico de Crédito, Renda Mensal e Dívida Atual. A ferramenta foi desenvolvida para apoiar instituições financeiras na avaliação da solvência e no gerenciamento do risco de crédito, proporcionando uma análise mais precisa e detalhada.
 
 ## Propósito
 
-Promover uma ferramenta para análise de risco de crédito utilizando lógica fuzzy.
+O propósito deste projeto é fornecer uma ferramenta avançada para análise de risco de crédito, utilizando lógica fuzzy para interpretar e avaliar dados financeiros. O sistema permite uma avaliação mais eficaz e informada da capacidade de crédito dos clientes, ajudando as instituições a tomar decisões mais seguras e precisas.
 
 ## Instalação
 
