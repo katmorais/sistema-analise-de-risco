@@ -30,7 +30,6 @@ Clone o repositório do projeto para sua máquina local:
 ## Execute o Código
 
 Para calcular o risco usando o código, execute:
-Copie o código:
 ```
  python appy.py
 ```
