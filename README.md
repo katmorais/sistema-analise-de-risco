@@ -34,6 +34,45 @@ Para calcular o risco usando o código, execute:
  python appy.py
 ```
 
+## Descrição das Variáveis
+
+### Variáveis de Entrada
+
+1. **Histórico de Crédito (`historico_credito`)**
+   - **Descrição**: Avalia a experiência anterior do cliente com crédito.
+   - **Intervalo**: De 0 a 10.
+   - **Categorias**:
+     - `ruim` (0-3)
+     - `regular` (0-6)
+     - `bom` (3-9)
+     - `excelente` (6-10)
+
+2. **Renda Mensal (`renda_mensal`)**
+   - **Descrição**: Reflete a renda mensal atual do cliente.
+   - **Intervalo**: De 0 a 10.000.
+   - **Categorias**:
+     - `baixa` (0-3.000)
+     - `media` (2.000-8.000)
+     - `alta` (6.000-10.000)
+
+3. **Dívida Atual (`divida_atual`)**
+   - **Descrição**: Representa o nível atual de dívida do cliente.
+   - **Intervalo**: De 0 a 10.000.
+   - **Categorias**:
+     - `baixa` (0-3.000)
+     - `moderada` (2.000-8.000)
+     - `alta` (6.000-10.000)
+
+### Variável de Saída
+
+- **Risco (`risco`)**
+  - **Descrição**: Avalia o risco de crédito do cliente com base nas variáveis de entrada.
+  - **Intervalo**: De 0 a 10.
+  - **Categorias**:
+    - `baixo` (0-3)
+    - `medio` (2-8)
+    - `alto` (6-10)
+      
 ## Regras Fuzzy
 
 As regras fuzzy usadas para calcular o risco são:
@@ -49,6 +88,24 @@ O sistema é construído com scikit-fuzzy, que permite definir variáveis fuzzy 
 - Definir Variáveis e Funções de Pertinência: Configurar as variáveis de entrada e saída e suas funções de pertinência.
 - Definir Regras Fuzzy: Estabelecer as regras que relacionam as variáveis de entrada ao risco.
 - Simular o Sistema: Fornecer entradas e calcular o risco com base nas regras fuzzy.
+
+## Exemplo de Uso
+
+Aqui está um exemplo de como usar o sistema:
+```
+from sistemaFuzzy import SistemaFuzzy
+
+if __name__ == "__main__":
+    sistema = SistemaFuzzy()
+
+
+    historico = 700  
+    renda = 5000    
+    divida = 2000   
+
+    resultado_risco = sistema.calcular_risco(historico, renda, divida)
+    print(f'O risco calculado é: {resultado_risco:.2f}')
+```
 
 ## Contribuição
 
